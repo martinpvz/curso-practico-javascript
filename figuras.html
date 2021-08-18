@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuras geométricas | Curso Práctico de JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/e43c4d36e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Figuras geométricas</h1>
+    <p>Este es el primer taller del curso práctico de JavaScript</p>
+  </header>
+
+  <section class="card">
+    <h3 class="card__title">Cuadrado</h3>
+    <i class="fas fa-square"></i>
+    <form class="card__form">
+      <label for="InputCuadrado"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el lado del cuadrado: </span>
+        <input id="InputCuadrado" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <div class="button">
+        <button class="card__button" type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+        <button class="card__button" type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="card card__color">
+    <h3 class="card__title">Triangulo</h3>
+    <i class="fas fa-exclamation-triangle"></i>
+    <form class="card__form">
+      <label for="InputTrianguloLado1"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el lado del triángulo: </span>
+        <input id="InputTrianguloLado1" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <label for="InputTrianguloLado2"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el segundo lado del triángulo: </span>
+        <input id="InputTrianguloLado2" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <label for="InputTrianguloBase"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa la base del triángulo: </span>
+        <input id="InputTrianguloBase" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <label for="InputTrianguloAltura"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa la altura del triángulo: </span>
+        <input id="InputTrianguloAltura" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <div class="button">
+        <button class="card__button" type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+        <button class="card__button" type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="card card__color-circle">
+    <h3 class="card__title">Circulo</h3>
+    <i class="fas fa-circle"></i>
+    <form class="card__form">
+      <label for="InputCuadrado"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el radio del circulo: </span>
+        <input id="InputCirculo" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <div class="button">
+        <button class="card__button" type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+        <button class="card__button" type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="./figuras.js"></script> <!-- por buenas practicas se coloca al final del body -->
+</body>
+</html>

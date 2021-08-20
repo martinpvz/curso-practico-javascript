@@ -36,6 +36,15 @@
         <input type="number" id="InputDescuento" class="card__input">
         <span class="card__description--text">%</span>
       </label>
+      <label for="InputCupon">
+        <span class="card__description">Selecciona el cupón a aplicar</span>
+        <input list="cupones" class="card__input" id="InputCupon">
+        <datalist id="cupones">
+          <option value="VERANO2021"></option>
+          <option value="FASHIONWEEK"></option>
+        </datalist>
+        <span class="card__description--text">%</span>
+      </label>
       <div>
         <button type="button" onclick="calcularPrecioConDescuento()" class="card__button">Calcular el precio con descuento</button>
       </div>

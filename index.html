@@ -80,6 +80,32 @@
     </form>
   </section>
 
+  <section class="card card__color-isoceles">
+    <h3 class="card__title">Triangulo Isóceles</h3>
+    <i class="fas fa-exclamation-triangle"></i>
+    <form class="card__form">
+      <label for="InputIsocelesLado1"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el lado del triángulo: </span>
+        <input id="InputIsocelesLado1" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <label for="InputIsocelesLado2"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa el segundo lado del triángulo: </span>
+        <input id="InputIsocelesLado2" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <label for="InputIsocelesBase"> <!--Colocamos el mismo que el del input-->
+        <span class="card__description">Ingresa la base del triángulo: </span>
+        <input id="InputIsocelesBase" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
+        <span class="card__description--measure">cm</span>
+      </label>
+      <div class="button">
+        <button class="card__button" type="button" onclick="calcularAlturaTriangulo()">Calcular altura triángulo</button>
+        <!-- <button class="card__button" type="button" onclick="calcularAreaCirculo()">Calcular área</button> -->
+      </div>
+    </form>
+  </section>
+
   <script src="./figuras.js"></script> <!-- por buenas practicas se coloca al final del body -->
 </body>
 </html>

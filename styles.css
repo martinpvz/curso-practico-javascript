@@ -109,7 +109,7 @@ header p {
 .card__button {
   margin-top: 15px;
   width: 130px;
-  height: 25px;
+  height: 35px;
   border: none;
   border-radius: 10px;
   font-weight: 700;
@@ -124,5 +124,10 @@ header p {
 
 .card__color-circle {
   background-color: #F4F1BB;
+}
+
+.card__color-isoceles {
+  background-color: #FFF87F;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */

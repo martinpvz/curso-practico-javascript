@@ -52,3 +52,22 @@ function calcularAreaCirculo () {
   let area = (radio ** 2) * Math.PI;
   alert(area);
 }
+
+
+function calcularAlturaTriangulo() {
+  lado1 = document.getElementById("InputIsocelesLado1").value;
+  lado2 = document.getElementById("InputIsocelesLado2").value;
+  base = document.getElementById("InputIsocelesBase").value;
+
+  if ( lado1 != lado2 ) {
+    alert("Los lados A y B no son iguales");
+  } else {
+    const trianguloPequenoLadoB = base / 2;
+    const trianguloPequenoLadoBase = lado1;
+    const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB ** 2;
+    const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase ** 2;
+    let trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+    const trianguloAltura = trianguloPequenoLadoA;
+    alert(trianguloAltura);
+  }
+}

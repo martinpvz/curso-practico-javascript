@@ -4,7 +4,8 @@ function calcularPerimetroCuadrado() {
   let value = Number(input.value); // con esto asignamos el valor que tiene el input
 
   let perimetro = value * 4;
-  alert(perimetro);
+  let parrafo = document.getElementById("ResultPrice");
+  parrafo.innerText = "El perímetro es igual a: " + perimetro;
 }
 
 function calcularAreaCuadrado () {
@@ -12,7 +13,8 @@ function calcularAreaCuadrado () {
   let value = input.value;
 
   let area = value ** 2;
-  alert(area);
+  let parrafo = document.getElementById("ResultPrice");
+  parrafo.innerText = "El área es igual a: " + area;
 }
 
 
@@ -25,7 +27,8 @@ function calcularPerimetroTriangulo() {
   let base = Number(InputBase.value);
 
   let perimetro = lado1 + lado2 + base;
-  alert(perimetro)
+  let parrafo = document.getElementById("ResultPriceTriangle");
+  parrafo.innerText = "El perímetro es igual a: " + perimetro;
 }
 
 function calcularAreaTriangulo() {
@@ -35,7 +38,8 @@ function calcularAreaTriangulo() {
   let altura = Number(InputAltura.value);
 
   let area = (base * altura)/2;
-  alert(area);
+  let parrafo = document.getElementById("ResultPriceTriangle");
+  parrafo.innerText = "El área es igual a: " + area;
 }
 
 
@@ -43,14 +47,16 @@ function calcularPerimetroCirculo() {
   let radio = document.getElementById("InputCirculo").value;
 
   let perimetro = (radio*2) * Math.PI;
-  alert(perimetro);
+  let parrafo = document.getElementById("ResultPriceCircle");
+  parrafo.innerText = "El perímetro es igual a: " + perimetro;
 }
 
 function calcularAreaCirculo () {
   let radio = document.getElementById("InputCirculo").value;
 
   let area = (radio ** 2) * Math.PI;
-  alert(area);
+  let parrafo = document.getElementById("ResultPriceCircle");
+  parrafo.innerText = "El área es igual a: " + area;
 }
 
 
@@ -68,6 +74,7 @@ function calcularAlturaTriangulo() {
     const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase ** 2;
     let trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
     const trianguloAltura = trianguloPequenoLadoA;
-    alert(trianguloAltura);
+    let parrafo = document.getElementById("ResultPriceHeight");
+    parrafo.innerText = "La altura es igual a: " + trianguloAltura;
   }
 }

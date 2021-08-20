@@ -14,10 +14,15 @@
 <body>
   <header>
     <h1>Figuras geométricas</h1>
-    <p>Este es el primer taller del curso práctico de JavaScript</p>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="./index.html">Figuras</a></li>
+        <li><a href="./descuentos.html">Descuentos</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="card">
+  <section class="card card__square">
     <h3 class="card__title">Cuadrado</h3>
     <i class="fas fa-square"></i>
     <form class="card__form">
@@ -30,6 +35,7 @@
         <button class="card__button" type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
         <button class="card__button" type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
       </div>
+      <p id="ResultPrice" class="card__result"></p>
     </form>
   </section>
 
@@ -61,6 +67,7 @@
         <button class="card__button" type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
         <button class="card__button" type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
       </div>
+      <p id="ResultPriceTriangle" class="card__result"></p>
     </form>
   </section>
 
@@ -68,7 +75,7 @@
     <h3 class="card__title">Círculo</h3>
     <i class="fas fa-circle"></i>
     <form class="card__form">
-      <label for="InputCuadrado"> <!--Colocamos el mismo que el del input-->
+      <label for="InputCirculo"> <!--Colocamos el mismo que el del input-->
         <span class="card__description">Ingresa el radio del circulo: </span>
         <input id="InputCirculo" type="number" class="card__input"> <!--Ponemos el id para identificarlo en JS-->
         <span class="card__description--measure">cm</span>
@@ -77,6 +84,7 @@
         <button class="card__button" type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
         <button class="card__button" type="button" onclick="calcularAreaCirculo()">Calcular área</button>
       </div>
+      <p id="ResultPriceCircle" class="card__result"></p>
     </form>
   </section>
 
@@ -103,6 +111,7 @@
         <button class="card__button" type="button" onclick="calcularAlturaTriangulo()">Calcular altura triángulo</button>
         <!-- <button class="card__button" type="button" onclick="calcularAreaCirculo()">Calcular área</button> -->
       </div>
+      <p id="ResultPriceHeight" class="card__result"></p>
     </form>
   </section>
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porcentajes y descuentos | Curso practico de JavasCript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/e43c4d36e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Porcentajes y descuentos</h1>
+    <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+  </header>
+
+  <section class="card card__color-discount">
+    <h3 class="card__title">Calcula el precio a pagar de tus productos con descuento</h3>
+    <i class="fas fa-tags"></i>
+    <form class="card__form">
+      <label for="InputProducto">
+        <span class="card__description">Esribe el precio del producto</span>
+        <input type="number" id="InputProducto" class="card__input">
+        <span class="card__description--text">$</span>
+      </label>
+      <label for="InputDescuento">
+        <span class="card__description">Escribe el descuento a aplicar</span>
+        <input type="number" id="InputDescuento" class="card__input">
+        <span class="card__description--text">%</span>
+      </label>
+      <div>
+        <button type="button" onclick="calcularPrecioConDescuento()" class="card__button">Calcular el precio con descuento</button>
+      </div>
+      <p id="ResultPrice" class="card__result"></p>
+    </form>
+  </section>
+
+
+
+
+  <script src="./descuentos.js"></script>
+</body>
+</html>

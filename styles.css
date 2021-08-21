@@ -158,4 +158,9 @@ header .navegacion a:hover {
 .card__color-isoceles {
   background-color: #FFF87F;
 }
+
+.button__discount {
+  position: relative;
+  left: calc(-10px);
+}
 /*# sourceMappingURL=styles.css.map */

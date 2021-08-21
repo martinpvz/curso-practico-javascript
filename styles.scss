@@ -137,3 +137,8 @@ header {
 .card__color-isoceles {
   background-color: $color-quinto;
 }
+
+.button__discount {
+  position: relative;
+  left: calc(-10px);
+}

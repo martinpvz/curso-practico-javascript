@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interes Simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/e43c4d36e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Interés Simple</h1>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="./index.html">Figuras</a></li>
+        <li><a href="./descuentos.html">Descuentos</a></li>
+        <li><a href="./promedio.html">Medidas</a></li>
+        <li><a href="./promedio.html">Interés</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="card card__color-discount">
+    <h3 class="card__title">Calcula el interés simple</h3>
+    <i class="fas fa-wallet"></i>
+    <form class="card__form">
+      <label for="InputCapital">
+        <span class="card__description">Esribe el capital deseado</span>
+        <input type="number" id="InputCapital" class="card__input">
+        <span class="card__description--text">$</span>
+      </label>
+      <label for="InputTasa">
+        <span class="card__description">Ingrese la tasa de interés</span>
+        <input type="number" id="InputTasa" class="card__input">
+        <span class="card__description--text">%</span>
+      </label>
+      <label for="InputTiempo">
+        <span class="card__description">Ingrese el número de años</span>
+        <input type="number" class="card__input" id="InputTiempo">
+        <span class="card__description--text">años</span>
+      </label>
+      <div>
+        <button type="button" onclick="calcularInteresSimple()" class="card__button button__discount">Calcular el interés simple</button>
+      </div>
+      <p id="ResultInterest" class="card__result"></p>
+    </form>
+  </section>
+
+
+  <script src="./interes-simple.js"></script>
+</body>
+</html>

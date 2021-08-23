@@ -147,6 +147,16 @@ header .navegacion a:hover {
   font-weight: 300;
 }
 
+.card__selector {
+  margin: 15px auto 5px auto;
+  padding: 5px 35px;
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #EAF2E3;
+}
+
 .card__color {
   background-color: #FF637D;
 }
